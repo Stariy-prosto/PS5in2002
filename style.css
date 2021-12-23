@@ -1,0 +1,122 @@
+body{
+	background-color: black;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	font-family: Arial;
+}
+
+a:link{
+	color: white;
+}
+
+a:visited{
+	color: white;
+}
+
+.header{
+	width: 80%;
+	background-image: url('img/other/bg-img.png');
+	padding: 15px;
+	text-align: center;
+}
+
+.content{
+	width: 80%;
+	background-image: url('img/other/bg-img.png');
+	padding: 15px;
+	font-size: 25px;
+}
+
+.footer{
+	width: 80%;
+	background-image: url('img/other/bg-img.png');
+	text-align: center;
+	padding: 15px;
+	font-size: 17px;
+}
+
+.imgages{
+	/*border: 3px solid;
+	border-color: blue;*/
+	width: 100%;
+}
+
+.menu{
+	margin: 30px;
+	vertical-align: top;
+}
+
+.disc_ps5{
+	width: 500px;
+}
+
+.main_title{
+	font-size: 75px;
+}
+
+
+/*Смена языка*/
+html[lang="ru"] [lang="en"] {
+    display: none;
+}
+html[lang="en"] [lang="ru"] {
+    display: none;
+}
+
+
+/* Оформление выпадающего списка */
+.content12 {
+	transition: max-height 0.2s;
+	overflow: hidden;
+}
+
+.content12[aria-hidden="true"] {
+		max-height: 0;
+	}
+.content12[aria-hidden="false"] {
+	max-height: var(--containerHeight, 1000px);
+}
+
+/* Everything after this is merely aesthetics */
+* {
+	box-sizing: border-box;
+}
+
+.container {
+	font-family: sans-serif;
+	line-height: 1.2;
+}
+
+.trigger {
+	font-size: 1em;
+	display: flex;
+	align-items: center;
+	padding: 0 20px;
+	min-height: 45px;
+	border-radius: 20px;
+	background-color: transparent;
+	color: white;
+}
+
+.trigger:focus {
+	border: 2px solid white;
+	outline: 0;
+}
+[data-drawer-showing="true"]
+.trigger {
+	color: #ABABAB;
+}
+
+.container + .container {
+	margin-top: 20px;
+}
+
+.content12 {
+	
+	margin: 1em;
+	line-height: 1.4;
+	max-width: 100%;
+}
